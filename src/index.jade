@@ -1,0 +1,179 @@
+<!doctype html>
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title #{locals.title}
+		meta(description="#{locals.description}")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet")
+		link(href="dist/spop.min.css" rel="stylesheet")
+		link(href="src/styles.min.css" rel="stylesheet")
+		link(href="src/favicon.ico" rel="icon")
+
+	body#body
+		.container
+			nav.menu
+				a(href="#demo-basic") Basic
+				a(href="#demo-position") Position
+				a(href="#demo-autoclose") Autoclose
+				a(href="#demo-groups") Groups
+				a(href="#demo-callbacks") Callbacks
+				a(href="#demo-event") Event
+				a(href="#demo-defaults") Defaults
+				a(href="#demo-options") Options
+
+			header.header
+				h1.header-title #{locals.title}
+				p.header-text.h3
+					| #{locals.description},
+					br
+					| create notifications easily.
+				a.btn(href='#0') Download #{locals.version}
+				a.btn(href='#0') View code
+
+			section#demo-basic.section
+				.text-main
+					.titles
+						h2.title Basic
+
+					p <small>Tip: to remove all SmallPop's click the title.</small>
+
+					p Include <code>spop.js</code> and <code>spop.css</code> in your page,
+
+				.text-code
+					pre
+						code.language-markup#code-markup
+
+			section.section
+				.text-main
+					p and call it:
+					a.btn.btn-block#btn-default-pop Default pop
+					a.btn.btn-block#btn-success-pop Success pop
+					a.btn.btn-block#btn-error-pop Error pop
+
+				.text-code
+					pre
+						code.language-javascript#code-basic
+
+			section.section#demo-position
+				.text-main
+					.titles
+						h2.title Position
+
+					p SmallPox has six differents positions:
+
+					.btn-group
+						a.btn#btn-top-left Top left
+						a.btn#btn-top-center Top center
+						a.btn#btn-top-right Top right
+
+					.btn-group
+						a.btn#btn-bottom-left Bottom left
+						a.btn#btn-bottom-center Bottom center
+						a.btn#btn-bottom-right Bottom right
+
+					p In <em>mobile</em> (max-width:30em), all go down.
+
+				.text-code
+					pre
+						code.language-javascript#code-position
+
+			section.section#demo-autoclose
+				.text-main
+					.titles
+						h2.title Autoclose
+
+					p Autoclose, to... close... automatically... <small>Woohoo never done before</small>
+					a.btn.btn-block#btn-autoclose-pop Autoclose
+
+				.text-code
+					pre
+						code.language-javascript#code-autoclose-pop
+
+			section.section#demo-groups
+				.text-main
+					.titles
+						h2.title Groups
+
+					p There can only be one SmallPop from each group
+					a.btn.btn-block#btn-groups-1 Group
+					a.btn.btn-block#btn-groups No group
+					a.btn.btn-block#btn-groups-2 Group
+
+				.text-code
+					pre
+						code.language-javascript#code-groups
+
+			section.section#demo-callbacks
+				.text-main
+					.titles
+						h2.title Callbacks
+
+					p Do what you need onOpen and onClose
+					a.btn.btn-block#btn-callbacks Callbacks
+
+				.text-code
+					pre
+						code.language-javascript#code-callbacks
+
+			section.section#demo-event
+				.text-main
+					.titles
+						h2.title Event
+
+					p In your template you can call the close event, just add <em>data-spop="close"</em>
+					a.btn.btn-block#btn-event Launch
+
+				.text-code
+					pre
+						code.language-javascript#code-event
+
+			section.section#demo-defaults
+				.text-main
+					.titles
+						h2.title Change Defaults
+
+					p Change the default options of all SmallPop's
+					a.btn.btn-block#btn-defaults Changed all defaults
+					a.btn.btn-block#btn-defaults-reset Restor defaults
+
+				.text-code
+					pre
+						code.language-javascript#code-defaults
+
+			section.section-full#demo-options
+				.section
+					.text-main-full
+						.titles
+								h2.title Options
+					.text-code
+
+				.text-code-full
+					pre
+						code.language-javascript#code-options
+
+
+
+			footer.footer
+				p
+					span.h3 Browser support:
+					br
+					| Chrome, Firefox, IE 11-10-9 <small>(9 no animations)</small>,
+					| Android Browser, Chrome for Android
+
+				p.footer-menu
+					//- a(href="#0") Download 
+					//- a(href="#0") Code 
+					//- a(href="#0") Issues/Bugs
+
+
+				p
+					small Created by Sílvio Rosa • Follow me on 
+						a(href="https://twitter.com/silvior_") twitter 
+						|  for updates.
+
+		a.btn.btn-go-top(href="#body") Go top
+
+		script(src="src/prism.js")
+		script(src="dist/spop.js")
+		script(src="src/scripts.min.js")

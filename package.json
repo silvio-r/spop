@@ -1,0 +1,36 @@
+{
+  "name": "SmallPop",
+  "version": "0.0.3",
+  "description": "A lightweight small pop up widget with no dependencies",
+  "author": "Sílvio Rosa",
+  "main": "./dist/spop.js",
+  "homepage": "----------",
+  "repository": "----------",
+  "bugs": {
+    "url": "-----"
+  },
+  "license": "MIT",
+  "keywords": [
+  	"smalpop",
+  	"spop",
+  	"spop.js",
+    "pop up",
+    "alert",
+    "toast",
+    "notification",
+    "toast notification",
+    "javascript plugin"
+  ],
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-rename": "1.2.2",
+    "gulp-load-plugins": "1.0.0-rc.1",
+    "gulp-uglify": "1.2.0",
+    "gulp-clean": "0.3.1",
+    "gulp-cssmin": "0.1.7",
+    "gulp-autoprefixer": "2.3.1",
+    "gulp-sass": "2.0.1",
+    "gulp-livereload": "2.1.1",
+    "gulp-jade": "1.4.3"
+  }
+}
