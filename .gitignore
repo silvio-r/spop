@@ -1,0 +1,36 @@
+lib-cov
+*.cache
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.bak
+*.tmp
+
+pids
+logs
+results
+
+.sass-cache
+*.css.map
+
+npm-debug.log
+node_modules
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Windows shortcuts
+*.lnk
