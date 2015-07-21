@@ -98,9 +98,9 @@
     .spop--bottom-left .spop,
     .spop--bottom-center .spop,
     .spop--bottom-right .spop {
-      -webkit-transform-origin: 50% 50%;
-          -ms-transform-origin: 50% 50%;
-              transform-origin: 50% 50%; }
+      -webkit-transform-origin: 50% 100%;
+          -ms-transform-origin: 50% 100%;
+              transform-origin: 50% 100%; }
   .spop {
     border-bottom: 1px solid #353942; } }
 
