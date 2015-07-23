@@ -103,7 +103,7 @@ $use-icon:                  true;
 		.spop { transform-origin: 50% 100%;}
 	}
 
-	.spop { border-bottom: 1px solid darken($spop-bg-color,7%);}
+	.spop { border-bottom: 1px solid rgba(#000,0.15);}
 }
 
 .spop {

@@ -102,7 +102,7 @@
           -ms-transform-origin: 50% 100%;
               transform-origin: 50% 100%; }
   .spop {
-    border-bottom: 1px solid #353942; } }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); } }
 
 .spop {
   position: relative;

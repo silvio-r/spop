@@ -236,7 +236,7 @@
 			"	icon      : true,// or false\n"+
 			"	group     : false,// string, add a id reference \n"+
 			"	onOpen    : funtion() {  },\n"+
-			"	onClose   : funtion() {  },\n" +
+			"	onClose   : funtion() {  }\n" +
 			"});";
 	}());
 
