@@ -1,5 +1,5 @@
 /*!
- * smallPop 0.0.3 | ------
+ * smallPop 0.1.0 | https://github.com/silvio-r/spop
  * Copyright (c) 2015 Sílvio Rosa @silvior_
  * MIT license
  */

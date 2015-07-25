@@ -1,13 +1,13 @@
 {
   "name": "SmallPop",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A lightweight small pop up widget with no dependencies",
   "author": "Sílvio Rosa",
   "main": "./dist/spop.js",
-  "homepage": "----------",
-  "repository": "----------",
+  "homepage": "http://silvio-r.github.io/spop/",
+  "repository": "https://github.com/silvio-r/spop",
   "bugs": {
-    "url": "-----"
+    "url": "https://github.com/silvio-r/spop/issues"
   },
   "license": "MIT",
   "keywords": [
