@@ -1,0 +1,39 @@
+
+
+$gray-dark:     #555;
+$gray:          #ddd;
+$gray-light:    #eee;
+$gray-lighter:  #f7f7f7;
+
+$color:			#454A56;
+$color-light:	#5c83b0;
+$content-bg:    #f7f7f7;
+
+$gutter: 2rem;
+
+$h1: 2.5rem;
+$h2: 1.8rem;
+$h3: 1.3rem;
+$h4: 1.15rem;
+
+$lh: 1.47em;
+
+@mixin mediaBP() {
+	@media (min-width: 57.88em) {
+		@content;
+	}
+}
+
+@mixin mediaXS() {
+	@media (min-width: 30em) {
+		@content;
+	}
+}
+
+@mixin clearfix() {
+	&:after {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+}
