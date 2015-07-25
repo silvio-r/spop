@@ -7,7 +7,6 @@
 
 	var docs = {};
 
-	// basic usage
 	docs.basic = (function() {
 
 		$('code-markup').innerHTML = '' +
@@ -37,8 +36,6 @@
 			"spop('&lt;strong&gt;Error Here!&lt;/strong&gt;', 'error');";
 	}());
 
-
-	// position options
 	docs.position = (function() {
 		$('btn-top-left').addEventListener('click', function() {
 			spop({
@@ -93,7 +90,6 @@
 		}, false);
 	}());
 
-	// autoclose
 	docs.autoclose = (function() {
 		$('btn-autoclose-pop').addEventListener('click', function() {
 			spop({
@@ -109,7 +105,6 @@
 			"});";
 	}());
 
-	// groups
 	docs.groups = (function() {
 		$('btn-groups-1').addEventListener('click', function() {
 			spop({
@@ -149,7 +144,6 @@
 			"});";
 	}());
 
-	// callbacks
 	docs.callbacks = (function() {
 		$('btn-callbacks').addEventListener('click', function() {
 			spop({
@@ -185,8 +179,7 @@
 			"});\n";
 	}());
 
-	// event
-	docs.callbacks = (function() {
+	docs.events = (function() {
 		$('btn-event').addEventListener('click', function() {
 			spop('Got to <a href="#demo-defaults" data-spop="close">defaults</a>');
 		}, false);
@@ -195,14 +188,13 @@
 			"spop('Got to &lt;a href=\"#demo-defaults\" data-spop=\"close\"&gt;defaults&lt;/a&gt;');";
 	}());
 
-	// defaults
 	docs.defaults = (function() {
 
 		$('btn-defaults').addEventListener('click', function() {
 
 			spop.defaults = {
 				style:'error',
-				autoclose: 2000,
+				autoclose: 5000,
 				position: 'top-left'
 			};
 
@@ -219,13 +211,12 @@
 		$('code-defaults').innerHTML = "" +
 			"spop.defaults = {\n" +
 			"	style     : 'error',\n" +
-			"	autoclose : 2000,\n" +
+			"	autoclose : 5000,\n" +
 			"	position  : 'top-left'\n" +
 			"};\n\n" +
 			"spop('Defaults changed! See the others examples.');\n";
 	}());
 
-	// options
 	docs.options = (function() {
 		$('code-options').innerHTML = "" +
 			"spop({\n" +
@@ -241,7 +232,6 @@
 	}());
 
 
-	// remove all spop's
 	docs.removeAllPops = (function() {
 		var title = $$('.title');
 		var pops;
@@ -295,4 +285,4 @@
 			}
 		}
 
-})();
+}());
