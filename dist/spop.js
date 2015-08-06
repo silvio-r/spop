@@ -1,5 +1,5 @@
 /*!
- * smallPop 0.1.0 | https://github.com/silvio-r/spop
+ * smallPop 0.1.1 | https://github.com/silvio-r/spop
  * Copyright (c) 2015 Sílvio Rosa @silvior_
  * MIT license
  */
@@ -152,7 +152,9 @@
 
 		setTimeout( function () {
 
-			elm.parentNode.removeChild(elm);
+			if(document.body.contains(elm)) {
+				elm.parentNode.removeChild(elm);
+			}
 
 			if (_this.opt.onClose) { _this.opt.onClose();}
 

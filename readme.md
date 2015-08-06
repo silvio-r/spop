@@ -1,6 +1,6 @@
 # SmallPop
 
-A lightweight small pop up widget with no dependencies, create notifications easily.
+A lightweight small pop up widget with no dependencies, create notifications easily with this javascript plugin.
 
 ## Basic
 

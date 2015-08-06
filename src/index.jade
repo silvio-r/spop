@@ -2,8 +2,8 @@
 html(lang="en")
 	head
 		meta(charset="utf-8")
-		title #{locals.title}
-		meta(description="#{locals.description}")
+		title #{locals.title}, small pop up javascript plugin
+		meta(name="description" content="#{locals.description}, create notifications easily with this javascript plugin")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet")
 		link(href="dist/spop.min.css" rel="stylesheet")
@@ -27,7 +27,8 @@ html(lang="en")
 				p.header-text.h3
 					| #{locals.description},
 					br
-					| create notifications easily.
+					| create notifications easily with this javascript plugin.
+
 				a.btn(href='https://github.com/silvio-r/spop/archive/#{locals.version}.zip') Download #{locals.version}
 				a.btn(href='https://github.com/silvio-r/spop') View code
 
