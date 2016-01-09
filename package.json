@@ -1,6 +1,6 @@
 {
   "name": "SmallPop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A lightweight small pop up widget with no dependencies",
   "author": "Sílvio Rosa",
   "main": "./dist/spop.js",

@@ -1,13 +1,13 @@
 # SmallPop
 
-A lightweight small pop up widget with no dependencies, create notifications easily with this javascript plugin.
+A lightweight small pop up widget with no dependencies, create notifications easily with this javascript plugin.<br>Playground in [Codepen](http://codepen.io/silvio-r/pen/jWmWXy).
 
 ## Basic
 
 Include spop.js and spop.css in your page.
 
 ```html
-<link href="spop.css" rel="stylesheet"> 
+<link href="spop.css" rel="stylesheet">
 <!-- Even better, SamallPop is made with scss, @import to your style.scss -->
 <script src="spop.js"></script>
 ```
@@ -17,7 +17,9 @@ and call it:
 ```javascript
 spop('Default SmallPop');
 
-spop('<h4 class="spop-title">Success</h4>Iˈm a success SmallPop, 'success');
+spop('<h4 class="spop-title">Success</h4>I´m a success SmallPop', 'success');
+
+spop('<strong>Warning pop</strong>', 'warning');
 
 spop('<strong>Error Here!</strong>', 'error');
 ```
@@ -106,13 +108,13 @@ spop('Got to <a href="#demo-defaults" data-spop="close">defaults</a>');
 ```javascript
 spop({
 	template  : null,// string required. Without it nothing happens!
-	style     : 'info',// error or success
+	style     : 'info',// success, warning or error
 	autoclose : false,// miliseconds
 	position  : 'top-right',// top-left top-center bottom-left bottom-center bottom-right
 	icon      : true,// or false
-	group     : false,// string, add a id reference 
-	onOpen    : funtion() {  },
-	onClose   : funtion()   
+	group     : false,// string, add a id reference
+	onOpen    : funtion() { },
+	onClose   : funtion() { }
 });
 ```
 
