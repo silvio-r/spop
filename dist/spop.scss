@@ -1,5 +1,5 @@
 /*!
- * smallPop 0.1.0 | https://github.com/silvio-r/spop
+ * smallPop 0.1.2 | https://github.com/silvio-r/spop
  * Copyright (c) 2015 Sílvio Rosa @silvior_
  * MIT license
  */
@@ -15,6 +15,9 @@ $spop-error-color:		#ff5656 !default;
 
 $spop-success-bg:		$spop-bg-color !default;
 $spop-success-color:	#2ecc54 !default;
+
+$spop-warning-bg:		$spop-bg-color !default;
+$spop-warning-color:	#fcd000 !default;
 
 $spop-title-color:      #fff !default;
 $spop-link-color:       $spop-title-color !default;
@@ -130,6 +133,7 @@ $use-icon:                  true;
 
 .spop--info,
 .spop--error,
+.spop--warning,
 .spop--success { color: $spop-color; background-color: $spop-bg-color;}
 
 @keyframes spopIn {
@@ -253,6 +257,19 @@ $use-icon:                  true;
 			border-bottom: 3px solid $spop-success-color;
 			border-left: 3px solid $spop-success-color;
 			transform: rotate(-45deg);
+		}
+	}
+
+	.spop-icon--warning {
+		border: 2px solid $spop-warning-color;
+		&:before {
+			top: 7px;
+			left: 7px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-color: transparent transparent $spop-warning-color transparent;
+			border-width: 0 6px 10px 6px;
 		}
 	}
 }

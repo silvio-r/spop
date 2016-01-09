@@ -1,5 +1,5 @@
 /*!
- * smallPop 0.1.1 | https://github.com/silvio-r/spop
+ * smallPop 0.1.2 | https://github.com/silvio-r/spop
  * Copyright (c) 2015 Sílvio Rosa @silvior_
  * MIT license
  */
@@ -8,11 +8,9 @@
 	'use strict';
 
 	var animationTime = 390;
-	var _this, options, defaults, container, icon, layout, popStyle, positions, close;
+	var options, defaults, container, icon, layout, popStyle, positions, close;
 
 	var SmallPop = function(template, style) {
-
-		_this = this;
 
 		this.defaults = {
 			template  : null,
@@ -95,7 +93,8 @@
 
 		popStyle = {
 			'success': 'success',
-			'error': 'error'
+			'error'  : 'error',
+			'warning': 'warning'
 		};
 		return sufix + (popStyle[arg] || 'info');
 	};
@@ -124,8 +123,6 @@
 
 	SmallPop.prototype.close = function () {
 
-		_this = this;
-
 		if (this.opt.autoclose && typeof this.opt.autoclose === 'number') {
 
 			this.autocloseTimer = setTimeout( this.remove.bind(null, this.pop), this.opt.autoclose);
@@ -142,6 +139,8 @@
 
 			if (this.autocloseTimer) { clearTimeout(this.autocloseTimer);}
 
+			if (this.opt.onClose) { this.opt.onClose();}
+
 			this.remove(this.pop);
 		}
 	};
@@ -155,8 +154,6 @@
 			if(document.body.contains(elm)) {
 				elm.parentNode.removeChild(elm);
 			}
-
-			if (_this.opt.onClose) { _this.opt.onClose();}
 
 		}, animationTime);
 	};
@@ -180,19 +177,6 @@
 	}
 
 	function extend(obj, src) {
-		// var extended = {};
-		// var prop;
-		// for (prop in defaults) {
-		// 	if (Object.prototype.hasOwnProperty.call(defaults, prop)) {
-		// 		extended[prop] = defaults[prop];
-		// 	}
-		// }
-		// for (prop in options) {
-		// 	if (Object.prototype.hasOwnProperty.call(options, prop)) {
-		// 		extended[prop] = options[prop];
-		// 	}
-		// }
-		// return extended;
 
 		for (var key in src) {
 			if (src.hasOwnProperty(key)) obj[key] = src[key];

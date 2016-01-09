@@ -23,6 +23,9 @@
 			spop('<h4 class="spop-title">Success</h4>Iˈm a success SmallPop', 'success');
 		}, false);
 
+		$('btn-warning-pop').addEventListener('click', function() {
+			spop('Warning SmallPop', 'warning');
+		}, false);
 
 		$('btn-error-pop').addEventListener('click', function() {
 			spop('<strong>Error Here!</strong>', 'error');
@@ -31,7 +34,9 @@
 		$('code-basic').innerHTML = "" +
 			"spop('Default SmallPop');\n" +
 			"\n" +
-			"spop('&lt;h4 class=\"spop-title\">Success&lt;/h4>Iˈm a success SmallPop, 'success');\n" +
+			"spop('&lt;h4 class=\"spop-title\">Success&lt;/h4>Iˈm a success SmallPop', 'success');\n" +
+			"\n" +
+			"spop('Warning SmallPop', 'warning');\n" +
 			"\n" +
 			"spop('&lt;strong&gt;Error Here!&lt;/strong&gt;', 'error');";
 	}());
@@ -148,6 +153,7 @@
 		$('btn-callbacks').addEventListener('click', function() {
 			spop({
 				template: 'Please, close me.',
+				style:'warning',
 				onOpen: function () {
 					document.body.style.background = "#fff";
 				},
@@ -165,6 +171,7 @@
 		$('code-callbacks').innerHTML = "" +
 			"spop({\n" +
 			"	template: 'Please, close me.',\n" +
+			"	style:'warning',\n" +
 			"	onOpen: function () {\n" +
 			"		document.body.style.background = \"#fff\";\n" +
 			"	},\n" +
@@ -226,8 +233,8 @@
 			"	position  : 'top-right',// top-left top-center bottom-left bottom-center bottom-right\n"+
 			"	icon      : true,// or false\n"+
 			"	group     : false,// string, add a id reference \n"+
-			"	onOpen    : funtion() {  },\n"+
-			"	onClose   : funtion() {  }\n" +
+			"	onOpen    : funtion() { },\n"+
+			"	onClose   : funtion() { }\n" +
 			"});";
 	}());
 

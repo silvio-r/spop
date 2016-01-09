@@ -38,14 +38,12 @@ var pac = require('./package.json');
 	});
 
 	gulp.task('watch', [ 'clean', 'styles', 'scripts'], function () {
-		var server = $.livereload();
+		$.livereload.listen();
 
 		gulp.watch([
 			'./dist/spop.min.js',
 			'./dist/spop.min.css'
-		]).on('change', function (file) {
-			server.changed(file.path);
-		});
+		]).on('change', $.livereload.changed);
 
 		gulp.watch('./dist/spop.js', ['scripts']);
 		gulp.watch('./dist/spop.scss', ['styles']);
@@ -99,15 +97,13 @@ var pac = require('./package.json');
 
 
 	gulp.task('watchDocs', [ 'cleanDocs', 'stylesDocs', 'scriptsDocs', 'html'], function () {
-		var server = $.livereload();
+		$.livereload.listen();
 
 		gulp.watch([
 			'./*.html',
 			'./src/scripts.min.js',
 			'./src/styles.min.css'
-		]).on('change', function (file) {
-			server.changed(file.path);
-		});
+		]).on('change', $.livereload.changed);
 
 		gulp.watch(['./src/index.jade', './package.json'], ['html']);
 		gulp.watch('./src/scripts.js', ['scriptsDocs']);
