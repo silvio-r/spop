@@ -1,142 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>SmallPop, small pop up javascript plugin</title>
-    <meta name="description" content="A lightweight small pop up widget with no dependencies, create notifications easily with this javascript plugin"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/>
-    <link href="dist/spop.min.css" rel="stylesheet"/>
-    <link href="src/styles.min.css" rel="stylesheet"/>
-    <link href="src/favicon.ico" rel="icon"/>
-  </head>
-  <body id="body">
-    <div class="container">
-      <nav class="menu"><a href="#demo-basic">Basic</a><a href="#demo-position">Position</a><a href="#demo-autoclose">Autoclose</a><a href="#demo-groups">Groups</a><a href="#demo-callbacks">Callbacks</a><a href="#demo-event">Event</a><a href="#demo-defaults">Defaults</a><a href="#demo-options">Options</a></nav>
-      <header class="header">
-        <h1 class="header-title">SmallPop</h1>
-        <p class="header-text h3">A lightweight small pop up widget with no dependencies,<br/>create notifications easily with this javascript plugin.</p><a href="https://github.com/silvio-r/spop/archive/0.1.2.zip" class="btn">Download 0.1.2</a><a href="https://github.com/silvio-r/spop" class="btn">View code</a>
-      </header>
-      <section id="demo-basic" class="section">
-        <div class="text-main">
-          <div class="titles">
-            <h2 class="title">Basic</h2>
-          </div>
-          <p><small>Tip: to remove all SmallPop's click the title.</small></p>
-          <p>Include <code>spop.js</code> and <code>spop.css</code> in your page,</p>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-markup" class="language-markup"></code></pre>
-        </div>
-      </section>
-      <section class="section">
-        <div class="text-main">
-          <p>and call it:</p><a id="btn-default-pop" class="btn btn-block">Default pop</a><a id="btn-success-pop" class="btn btn-block">Success pop</a><a id="btn-warning-pop" class="btn btn-block">Warning pop</a><a id="btn-error-pop" class="btn btn-block">Error pop</a>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-basic" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <section id="demo-position" class="section">
-        <div class="text-main">
-          <div class="titles">
-            <h2 class="title">Position</h2>
-          </div>
-          <p>SmallPox has six differents positions:</p>
-          <div class="btn-group"><a id="btn-top-left" class="btn">Top left</a><a id="btn-top-center" class="btn">Top center</a><a id="btn-top-right" class="btn">Top right</a></div>
-          <div class="btn-group"><a id="btn-bottom-left" class="btn">Bottom left</a><a id="btn-bottom-center" class="btn">Bottom center</a><a id="btn-bottom-right" class="btn">Bottom right</a></div>
-          <p>In <em>mobile</em> (max-width:30em), all go down.</p>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-position" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <section id="demo-autoclose" class="section">
-        <div class="text-main">
-          <div class="titles">
-            <h2 class="title">Autoclose</h2>
-          </div>
-          <p>Autoclose, to... close... automatically... <small>Woohoo never done before</small></p><a id="btn-autoclose-pop" class="btn btn-block">Autoclose</a>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-autoclose-pop" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <section id="demo-groups" class="section">
-        <div class="text-main">
-          <div class="titles">
-            <h2 class="title">Groups</h2>
-          </div>
-          <p>There can only be one SmallPop from each group</p><a id="btn-groups-1" class="btn btn-block">Group</a><a id="btn-groups" class="btn btn-block">No group</a><a id="btn-groups-2" class="btn btn-block">Group</a>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-groups" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <section id="demo-callbacks" class="section">
-        <div class="text-main">
-          <div class="titles">
-            <h2 class="title">Callbacks</h2>
-          </div>
-          <p>Do what you need onOpen and onClose</p><a id="btn-callbacks" class="btn btn-block">Callbacks</a>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-callbacks" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <section id="demo-event" class="section">
-        <div class="text-main">
-          <div class="titles">
-            <h2 class="title">Event</h2>
-          </div>
-          <p>In your template you can call the close event, just add <em>data-spop="close"</em></p><a id="btn-event" class="btn btn-block">Launch</a>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-event" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <section id="demo-defaults" class="section">
-        <div class="text-main">
-          <div class="titles">
-            <h2 class="title">Change Defaults</h2>
-          </div>
-          <p>Change the default options of all SmallPop's</p><a id="btn-defaults" class="btn btn-block">Changed all defaults</a><a id="btn-defaults-reset" class="btn btn-block">Restor defaults</a>
-        </div>
-        <div class="text-code">
-          <pre><code id="code-defaults" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <section id="demo-options" class="section-full">
-        <div class="section">
-          <div class="text-main-full">
-            <div class="titles">
-              <h2 class="title">Options</h2>
-            </div>
-          </div>
-          <div class="text-code"></div>
-        </div>
-        <div class="text-code-full">
-          <pre><code id="code-options" class="language-javascript"></code></pre>
-        </div>
-      </section>
-      <footer class="footer">
-        <p><span class="h3">Browser support:</span><br/>Chrome, Firefox, IE 11-10-9 <small>(9 no animations)</small>,
-          Android Browser, Chrome for Android, Safari, iOS Safari
-        </p>
-        <p class="footer-menu"><a href="https://github.com/silvio-r/spop/archive/0.1.2.zip">Download </a><a href="https://github.com/silvio-r/spop">Code </a><a href="https://github.com/silvio-r/spop/issues">Issues/Bugs</a><a href="http://codepen.io/silvio-r/pen/jWmWXy">Codepen playground</a></p>
-        <p><small>Created by Sílvio Rosa • Follow me on <a href="https://twitter.com/silvior_">twitter </a> for updates.</small></p>
-      </footer>
-    </div><a href="#body" class="btn btn-go-top">Go top</a>
-    <script src="src/prism.js"></script>
-    <script src="dist/spop.min.js"></script>
-    <script src="src/scripts.min.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-65598989-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
+	<head>
+		<meta charset="utf-8"/>
+		<title>SmallPop, small pop up javascript plugin</title>
+		<meta name="description" content="A lightweight small pop up widget with no dependencies, create notifications easily with this javascript plugin"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/>
+		<link href="dist/spop.min.css" rel="stylesheet"/>
+		<link href="src/styles.min.css" rel="stylesheet"/>
+		<link href="src/favicon.ico" rel="icon"/>
+	</head>
+	<body id="body">
+		<div class="container">
+			<nav class="menu"><a href="#demo-basic">Basic</a><a href="#demo-position">Position</a><a href="#demo-autoclose">Autoclose</a><a href="#demo-groups">Groups</a><a href="#demo-callbacks">Callbacks</a><a href="#demo-event">Event</a><a href="#demo-defaults">Defaults</a><a href="#demo-options">Options</a></nav>
+			<header class="header">
+				<h1 class="header-title">SmallPop</h1>
+				<p class="header-text h3">A lightweight small pop up widget with no dependencies,<br/>create notifications easily with this javascript plugin.</p><a href="https://github.com/silvio-r/spop/archive/0.1.2.zip" class="btn">Download 0.1.2</a><a href="https://github.com/silvio-r/spop" class="btn">View code</a>
+			</header>
+			<section id="demo-basic" class="section">
+				<div class="text-main">
+					<div class="titles">
+						<h2 class="title">Basic</h2>
+					</div>
+					<p><small>Tip: to remove all SmallPop's click the title.</small></p>
+					<p>Include <code>spop.js</code> and <code>spop.css</code> in your page,</p>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-markup" class="language-markup"></code></pre>
+				</div>
+			</section>
+			<section class="section">
+				<div class="text-main">
+					<p>and call it:</p><a id="btn-default-pop" class="btn btn-block">Default pop</a><a id="btn-success-pop" class="btn btn-block">Success pop</a><a id="btn-warning-pop" class="btn btn-block">Warning pop</a><a id="btn-error-pop" class="btn btn-block">Error pop</a>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-basic" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<section id="demo-position" class="section">
+				<div class="text-main">
+					<div class="titles">
+						<h2 class="title">Position</h2>
+					</div>
+					<p>SmallPox has six differents positions:</p>
+					<div class="btn-group"><a id="btn-top-left" class="btn">Top left</a><a id="btn-top-center" class="btn">Top center</a><a id="btn-top-right" class="btn">Top right</a></div>
+					<div class="btn-group"><a id="btn-bottom-left" class="btn">Bottom left</a><a id="btn-bottom-center" class="btn">Bottom center</a><a id="btn-bottom-right" class="btn">Bottom right</a></div>
+					<p>In <em>mobile</em> (max-width:30em), all go down.</p>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-position" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<section id="demo-autoclose" class="section">
+				<div class="text-main">
+					<div class="titles">
+						<h2 class="title">Autoclose</h2>
+					</div>
+					<p>Autoclose, to... close... automatically... <small>Woohoo never done before</small></p><a id="btn-autoclose-pop" class="btn btn-block">Autoclose</a>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-autoclose-pop" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<section id="demo-groups" class="section">
+				<div class="text-main">
+					<div class="titles">
+						<h2 class="title">Groups</h2>
+					</div>
+					<p>There can only be one SmallPop from each group</p><a id="btn-groups-1" class="btn btn-block">Group</a><a id="btn-groups" class="btn btn-block">No group</a><a id="btn-groups-2" class="btn btn-block">Group</a>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-groups" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<section id="demo-callbacks" class="section">
+				<div class="text-main">
+					<div class="titles">
+						<h2 class="title">Callbacks</h2>
+					</div>
+					<p>Do what you need onOpen and onClose</p><a id="btn-callbacks" class="btn btn-block">Callbacks</a>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-callbacks" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<section id="demo-event" class="section">
+				<div class="text-main">
+					<div class="titles">
+						<h2 class="title">Event</h2>
+					</div>
+					<p>In your template you can call the close event, just add <em>data-spop="close"</em></p><a id="btn-event" class="btn btn-block">Launch</a>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-event" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<section id="demo-defaults" class="section">
+				<div class="text-main">
+					<div class="titles">
+						<h2 class="title">Change Defaults</h2>
+					</div>
+					<p>Change the default options of all SmallPop's</p><a id="btn-defaults" class="btn btn-block">Changed all defaults</a><a id="btn-defaults-reset" class="btn btn-block">Restore defaults</a>
+				</div>
+				<div class="text-code">
+					<pre><code id="code-defaults" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<section id="demo-options" class="section-full">
+				<div class="section">
+					<div class="text-main-full">
+						<div class="titles">
+							<h2 class="title">Options</h2>
+						</div>
+					</div>
+					<div class="text-code"></div>
+				</div>
+				<div class="text-code-full">
+					<pre><code id="code-options" class="language-javascript"></code></pre>
+				</div>
+			</section>
+			<footer class="footer">
+				<p><span class="h3">Browser support:</span><br/>Chrome, Firefox, IE 11-10-9 <small>(9 no animations)</small>,
+					Android Browser, Chrome for Android, Safari, iOS Safari
+				</p>
+				<p class="footer-menu"><a href="https://github.com/silvio-r/spop/archive/0.1.2.zip">Download </a><a href="https://github.com/silvio-r/spop">Code </a><a href="https://github.com/silvio-r/spop/issues">Issues/Bugs</a><a href="http://codepen.io/silvio-r/pen/jWmWXy">Codepen playground</a></p>
+				<p><small>Created by Sílvio Rosa • Follow me on <a href="https://twitter.com/silvior_">twitter </a> for updates.</small></p>
+			</footer>
+		</div><a href="#body" class="btn btn-go-top">Go top</a>
+		<script src="src/prism.js"></script>
+		<script src="dist/spop.min.js"></script>
+		<script src="src/scripts.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-65598989-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
 </html>
