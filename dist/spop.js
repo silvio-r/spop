@@ -125,7 +125,7 @@
 
 		if (this.opt.autoclose && typeof this.opt.autoclose === 'number') {
 
-			this.autocloseTimer = setTimeout( this.remove.bind(null, this.pop), this.opt.autoclose);
+			this.autocloseTimer = setTimeout( this.remove.bind(this, this.pop), this.opt.autoclose);
 		}
 
 		this.pop.addEventListener('click', this.addListeners.bind(this) , false);
@@ -139,13 +139,13 @@
 
 			if (this.autocloseTimer) { clearTimeout(this.autocloseTimer);}
 
-			if (this.opt.onClose) { this.opt.onClose();}
-
 			this.remove(this.pop);
 		}
 	};
 
 	SmallPop.prototype.remove = function(elm) {
+
+		if (this.opt.onClose) { this.opt.onClose();}
 
 		removeClass(elm, 'spop--in');
 
