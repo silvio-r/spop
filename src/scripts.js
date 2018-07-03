@@ -233,8 +233,8 @@
 			"	position  : 'top-right',// top-left top-center bottom-left bottom-center bottom-right\n"+
 			"	icon      : true,// or false\n"+
 			"	group     : false,// string, add a id reference \n"+
-			"	onOpen    : funtion() { },\n"+
-			"	onClose   : funtion() { }\n" +
+			"	onOpen    : function() { },\n"+
+			"	onClose   : function() { }\n" +
 			"});";
 	}());
 

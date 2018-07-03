@@ -113,8 +113,8 @@ spop({
 	position  : 'top-right',// top-left top-center bottom-left bottom-center bottom-right
 	icon      : true,// or false
 	group     : false,// string, add a id reference
-	onOpen    : funtion() { },
-	onClose   : funtion() { }
+	onOpen    : function() { },
+	onClose   : function() { }
 });
 ```
 
